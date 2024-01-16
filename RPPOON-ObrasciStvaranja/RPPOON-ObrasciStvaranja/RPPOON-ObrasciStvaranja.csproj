@@ -3,14 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>RPPOON_ObrasciStvaranja</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Zadaca1\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Zadaca1\" />
-  </ItemGroup>
 </Project>
