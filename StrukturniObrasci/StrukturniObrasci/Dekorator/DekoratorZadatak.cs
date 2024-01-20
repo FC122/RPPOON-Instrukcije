@@ -1,49 +1,53 @@
 namespace DekoraterZadatak
 {
-    public class Effect
+    public class BaseHealthEffect
     {
-        public void ApplyEffect()
+        public void ApplyBaseHealth()
         {
-            Console.WriteLine("Apply Base Effect");
+            Console.WriteLine("Apply Base Health");
         }
     }
-    public class HealthRegen
+
+    public class HealthRegeneration
     {
-        public void HealthRegenEffect()
+        public void ApplyHealthRegeneration()
         {
             Console.WriteLine("Health Regen");
         }
+
     }
-    public class ArmorEffect
+    public class ArmorBuff
     {
-        public void ArmorIncrease()
+        public void IncreaseArmor()
         {
             Console.WriteLine("Armor Increase");
         }
     }
-    public class MagicDmg
+
+    public class MagicDamage
     {
-        public void IncreaseMagicDmg()
+        public void IncreaseMagicDamage()
         {
             Console.WriteLine("Magic Dmg");
         }
     }
+
     public class Player
     {
-        Effect effect;
-        MagicDmg magicDmg;
-        ArmorEffect armorEffect;
-        HealthRegen healthRegen;
+        BaseHealthEffect baseHealthEffect;
+        HealthRegeneration healthRegeneration;
+        ArmorBuff armorBuff;
+        MagicDamage magicDamage;
         public Player()
         {
-            effect = new Effect();
-            magicDmg = new MagicDmg();
-            armorEffect = new ArmorEffect();
-            healthRegen = new HealthRegen();
-            effect.ApplyEffect();
-            magicDmg.IncreaseMagicDmg();
-            armorEffect.ArmorIncrease();
-            healthRegen.HealthRegenEffect();
+            baseHealthEffect = new BaseHealthEffect();
+            healthRegeneration = new HealthRegeneration();
+            armorBuff = new ArmorBuff();
+            magicDamage = new MagicDamage();
+            baseHealthEffect.ApplyBaseHealth();
+            healthRegeneration.ApplyHealthRegeneration();
+            armorBuff.IncreaseArmor();
+            magicDamage.IncreaseMagicDamage();
         }
     }
 

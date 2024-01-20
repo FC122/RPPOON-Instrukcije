@@ -2,9 +2,6 @@ namespace AdapterZadatak
 {
     public class Arcane
     {
-        //You want warrior to use Arcane effect but you cant change Arcane class
-        //you cant make it implement IEffect?
-        //use adapter to make Warrior use arcane effect
         public string ArcaneEffect()
         {
             return "Arcane Slash";
@@ -18,6 +15,7 @@ namespace AdapterZadatak
             Console.WriteLine(effect.GetEffect() + " Slash");
         }
     }
+
     public interface IEffect
     {
         public string GetEffect();
