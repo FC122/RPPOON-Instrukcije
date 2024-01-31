@@ -1,0 +1,1 @@
+/*U cemu se ogleda nacelo single responsibility u sklopu oblikovnog obrasca strategije*/

@@ -1,9 +1,8 @@
+using System.Security.Cryptography;
+
 namespace PosjetiteljRjesenje
 {
-    public interface IInstructions
-    {
-        public void Teach(IMode mode);
-    }
+
 
     public interface IMode
     {
@@ -28,11 +27,17 @@ namespace PosjetiteljRjesenje
     {
         public void TeachMathematics(Mathematics mathematics)
         {
-            Console.WriteLine($"{mathematics.teacher} is teaching math live");
+            Console.WriteLine($"{mathematics.teacher} is teaching math live"); Console.WriteLine($"{mathematics.teacher} is teaching math live"); Console.WriteLine($"{mathematics.teacher} is teaching math live"); Console.WriteLine($"{mathematics.teacher} is teaching math live");
         }
 
         public void TeachRPPOON(RPPOON rppoon)
         {
+            rppoon.age
+            Console.WriteLine($"{rppoon.teacher} is teaching rppoon live");
+        }
+        public void dsad(RPPOON rppoon)
+        {
+            rppoon.age
             Console.WriteLine($"{rppoon.teacher} is teaching rppoon live");
         }
     }
@@ -55,7 +60,22 @@ namespace PosjetiteljRjesenje
     public class Mathematics : IInstructions
     {
         public string teacher { get; private set; }
+        private int age;
+        public Mathematics(string teacher)
+        {
+            this.teacher = teacher;
+        }
 
+        public void Teach(IMode mode)
+        {
+            mode.TeachMathematics(this);
+        }
+    }
+
+    public class Mathematics : IInstructions
+    {
+        public string teacher { get; private set; }
+        private int age;
         public Mathematics(string teacher)
         {
             this.teacher = teacher;
@@ -91,8 +111,10 @@ namespace PosjetiteljRjesenje
             List<IInstructions> instructions = new List<IInstructions>(){
                 new Mathematics("Antun"),
                 new RPPOON("Filip"),
-                new RPPOON("Ana")
+                new RPPOON("Ana"),
+                new RPPOON("Mihael")
             };
+
             instructions.ForEach(i =>
             {
                 i.Teach(InstructionsCoordinator.StartInMode());

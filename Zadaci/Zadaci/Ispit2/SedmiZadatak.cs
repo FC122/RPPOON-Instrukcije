@@ -1,0 +1,1 @@
+/*Navedite tri posljedice uporabe oblikovnog obrasca Proxy*/

@@ -1,0 +1,2 @@
+/*Dajte primjer pseudokoda koji narusava nacelo dependency 
+inversion te objasnite u cemu se to ogleda i zasto je to problem*/

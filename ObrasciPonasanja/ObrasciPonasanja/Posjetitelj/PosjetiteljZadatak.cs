@@ -10,61 +10,33 @@ namespace PosjetiteljZadatak
 
     public class RPPOONOnline : IInstructions
     {
-        public string teacher { get; private set; }
-
-        public RPPOONOnline(string teacher)
-        {
-            this.teacher = teacher;
-        }
-
         public void Teach()
         {
             Console.WriteLine("Teach RPPOON Online");
         }
     }
 
-    public class RPPOONLive : IInstructions
+    public class RPPOONClassroom : IInstructions
     {
-        public string teacher { get; private set; }
-
-        public RPPOONLive(string teacher)
-        {
-            this.teacher = teacher;
-        }
-
         public void Teach()
         {
-            Console.WriteLine("Teach RPPOON Live");
+            Console.WriteLine("Teach RPPOON Classroom");
         }
     }
 
-    public class MathematicsOnline : IInstructions
+    public class OnlineMathematics : IInstructions
     {
-        public string teacher { get; private set; }
-
-        public MathematicsOnline(string teacher)
-        {
-            this.teacher = teacher;
-        }
-
         public void Teach()
         {
             Console.WriteLine("Teach Math Online");
         }
     }
 
-    public class MathematicsLive : IInstructions
+    public class ClassroomMathematics : IInstructions
     {
-        public string teacher { get; private set; }
-
-        public MathematicsLive(string teacher)
-        {
-            this.teacher = teacher;
-        }
-
         public void Teach()
         {
-            Console.WriteLine("Teach Math Live");
+            Console.WriteLine("Teach Math Classroom");
         }
     }
 
@@ -72,17 +44,13 @@ namespace PosjetiteljZadatak
     {
         public static void Run()
         {
+            IInstructions instructions;
             string input = Console.ReadLine();
-            if (input == "Live")
+            if (input == "Online")
             {
-                new MathematicsLive("Antun");
-                new RPPOONLive("Filip");
+                instructions =
             }
-            else
-            {
-                new RPPOONOnline("Filip");
-                new MathematicsOnline("Antun");
-            }
+            else ...
         }
     }
 
