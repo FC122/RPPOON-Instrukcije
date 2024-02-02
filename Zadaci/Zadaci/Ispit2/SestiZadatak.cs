@@ -1,4 +1,5 @@
-/*Napisite unit test koji provjerava ispravan rad metode dane sljedecim izlistanjem koda koda*/
+/*Napisite unit test koji provjerava ispravan rad 
+metode dane sljedecim izlistanjem koda koda*/
 namespace SestiZadatak
 {
     public class CompoundChecker
@@ -6,7 +7,8 @@ namespace SestiZadatak
         private List<string> harmfulCompounds;
         private int allowedHarmfulCompounds;
 
-        public CompoundChecker(List<string> harmfulCompounds, int allowedHarmfulCompounds)
+        public CompoundChecker(List<string> harmfulCompounds,
+        int allowedHarmfulCompounds)
         {
             this.harmfulCompounds = harmfulCompounds;
             this.allowedHarmfulCompounds = allowedHarmfulCompounds;
@@ -17,7 +19,8 @@ namespace SestiZadatak
             int harmfulCompoundCount = 0;
             foreach (string harmfulCompound in harmfulCompounds)
             {
-                if (chemicalCompound.Contains(harmfulCompound, StringComparison.OrdinalIgnoreCase))
+                if (chemicalCompound.Contains(harmfulCompound,
+                    StringComparison.OrdinalIgnoreCase))
                 {
                     harmfulCompoundCount++;
                 }

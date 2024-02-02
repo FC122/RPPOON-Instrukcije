@@ -1,1 +1,2 @@
-/*U cemu se ogleda nacelo single responsilitiy u sklopu oblikovnog obrasca lanac odgovornosti*/
+/*U cemu se ogleda nacelo single responsilitiy u sklopu 
+oblikovnog obrasca lanac odgovornosti*/

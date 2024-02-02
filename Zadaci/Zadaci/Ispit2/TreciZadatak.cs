@@ -1,2 +1,2 @@
-/*Dajte primjer pseudokoda koji narusava nacelo dependency 
-inversion te objasnite u cemu se to ogleda i zasto je to problem*/
+/*Dajte primjer pseudokoda koji narusava nacelo ocp 
+te objasnite u cemu se to ogleda i zasto je to problem*/

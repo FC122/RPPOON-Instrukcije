@@ -17,8 +17,10 @@ namespace OsmiZadatak
     //     class WeatherForecastProvider : ILiveWeatherForecast
     //     {
     //         private DateTime lastUpdate = DateTime.Now;
-    //         private Weather currentWeather = WeatherService.GetWeatherForecast();
-    //         private List<IWeatherProcessor> processors = new List<IWeatherProcessor>();
+    //         private Weather currentWeather = 
+    //WeatherService.GetWeatherForecast();
+    //         private List<IWeatherProcessor> processors = 
+    //new List<IWeatherProcessor>();
 
     //         public void Register(IWeatherProcessor processor)
     //         {

@@ -1,0 +1,4 @@
+/*
+U cemu se ogleda dependency inversion principle u 
+sklopu oblikovnog obrasca Strategija
+*/

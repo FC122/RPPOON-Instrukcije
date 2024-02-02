@@ -1,0 +1,1 @@
+/*U cemu se ogleda nacelo OCP u sklopu oblikovnog obrasca lanac odgovornosti*/

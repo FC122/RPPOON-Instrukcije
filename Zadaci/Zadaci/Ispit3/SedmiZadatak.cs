@@ -1,0 +1,1 @@
+/*Navedite barem dvije prednosti i moguca nedostatka oblikovnog obrasca singleton*/

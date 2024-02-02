@@ -1,0 +1,1 @@
+/*Navedite barem po dvije prednosti i moguca nedostatka oblikovnog obrasca Apstraktna tvornica*/

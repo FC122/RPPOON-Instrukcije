@@ -20,9 +20,15 @@ namespace PrviZadatak
         {
             switch (cakeType)
             {
-                case "standard": return new CakeClass(2, ShapesOptions.Square, false);
-                case "fancy": return new CakeClass(4, ShapesOptions.Circle, false);
-                case "wedding": return new CakeClass(6, ShapesOptions.Circle, true);
+                case "standard":
+                    return new CakeClass(2,
+                    ShapesOptions.Square, false);
+                case "fancy":
+                    return new CakeClass(4,
+                    ShapesOptions.Circle, false);
+                case "wedding":
+                    return new CakeClass(6,
+                    ShapesOptions.Circle, true);
                 default: return null;
             }
         }

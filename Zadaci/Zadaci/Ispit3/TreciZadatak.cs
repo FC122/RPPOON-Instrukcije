@@ -1,0 +1,2 @@
+/*Dajte primjer pseudokoda koji narusava nacelo lisk substitution principle 
+inversion te objasnite u cemu se to ogleda i zasto je to problem*/

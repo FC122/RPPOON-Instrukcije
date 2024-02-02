@@ -1,4 +1,5 @@
-/*Napisite unit test koji provjerava ispravan rad metode dane sljedecim izlistanjem koda*/
+/*Napisite unit test koji provjerava ispravan rad metode dane 
+sljedecim izlistanjem koda*/
 
 namespace SestiZadatakRjesenje
 {
